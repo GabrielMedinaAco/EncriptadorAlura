@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador Alura</title>
+        <link rel="icon" href="imagenes/logo.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class = "container">
+
+            <!--Fondo Matrix-->
+            
+            <header >
+                <a href="https://www.aluracursos.com/" class="logo" name="logo"><h1>a</h1></a>
+                <p>Bienvenido al Encriptador Alura</p>
+            </header> 
+            <main class = "container-main">
+                <!--texto a encriptar-->
+                <section class="entrada">
+                    <textarea spellcheck="false" type="text" id="textareaI" name="textareaI" class="ingreseTexto" cols="20" rows="10" placeholder="Ingrese el texto aqui" ></textarea>                
+                    <div class="container-exterior">
+                        <p><label for="textareaI">⚠ Sólo letras minúsculas y acentos</label></p>
+                        
+                        <div class="botones"><!--botenes de encriptar/desencriptar-->
+                            <button id="btnEncriptar" class="boton">Encriptar</button>
+                            <button id="btnDesencriptar" class="boton">Desencriptar</button>
+                        </div>
+                    </div class="container-exterior">
+                                    
+                </section>
+                
+                <section class="mensaje"> <!--mensaje de salida-->
+                    <div class = "tapa">
+                        <img id="imagen" src="imagenes/minidino.png" alt="imagen minidino" >
+                        <p class="párrafoSalida">Ningún Mensaje fue encontrado</p>
+                        <p class="párrafoSalida2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    
+                    <div class = "mensajeSalida">
+                        <textarea  spellcheck="false" readonly id="mensaje-out" cols="20" rows="10" ></textarea>
+                        
+                        <div class="botones">
+                            <button id="btnCopiar" class="boton">Copiar</button>
+                            <button id="btnBorrar" class="boton">Borrar</button>
+                        </div>
+                    </div>
+                                
+                </section>   
+            </main> 
+            <!--Contacto-->
+            <footer>  
+                <a href="https://www.linkedin.com/in/gabriel-medina-aco"><img src="imagenes/linkedin.png" alt="miLinkedin" class = "logosRedes"></a>
+                <p>  &copy; Gabriel Medina</p>
+                <a href="https://github.com/GabrielMedinaAco?tab=repositories"><img src="imagenes/github.png" alt="miGithub" class = "logosRedes"></a>
+            </footer> 
+            
+            
+            
+        </div>
+        <canvas id="canvasMatrix"></canvas>
+        <script src="script.js"></script>       
+        <script src="script2.js"></script> 
+    </body>
+</html>

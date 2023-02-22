@@ -1,0 +1,284 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+:root {
+    --fondo: #262335;
+    --morado:#9346DE;
+    --verde: #00ADB9
+}
+
+::-webkit-scrollbar{
+    width: 0.7vw;
+    height: 0.7vw;
+    background-color:black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--fondo);
+    border-radius: 15px;
+    border: 2px solid var(--morado);
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
+    color: var(--morado);
+    line-height: normal;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    background:none;
+    position: absolute;
+    
+}
+
+<!--Fondo Matrix-->
+#canvasMatrix{
+    background-color:var(--fondo);
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+header{
+    background-color: var(--fondo);
+    height: 10vh;
+    display: flex;
+    color: var(--morado);
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
+}
+
+header p{
+    font-size:1.5em;
+    text-align: center;
+    margin:auto;
+}
+
+.logo{
+    color: var(--morado);
+    font-size:3em;
+    margin-left: 2em;
+    text-decoration: none;
+    text-shadow: 2px 1px 3px #B93AFF;
+
+}
+
+.container-main{
+   
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:0;
+    width: 100vw;
+    height: 80vh; 
+    align-content: center;
+    align-items: center;
+          
+}
+
+
+.entrada{
+   
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: left;
+   height: 80vh;
+       
+}
+
+.ingreseTexto{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid var(--morado);
+    border-radius: 3vw;
+    box-shadow: 0px 0px 10px;
+    color: var(--morado);
+    resize: none;
+    font-size: 2em;
+    text-align: justify;
+    text-transform: lowercase;
+    width: 80%;
+    padding: 2em;
+    height: 50vh;
+    margin-top: 5vh;
+        
+}
+
+::placeholder{color: var(--morado);}
+.ingreseTexto:focus{
+        outline: none;
+}
+
+.container-exterior{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 25vh;
+    justify-content: space-around;
+    width: 80%;
+    align-content: center;
+}
+
+
+.container-exterior p label{
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.mensaje{
+    position: relative;
+    height: 80vh;
+}
+    
+.mensajeSalida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    width: 90%;
+    height: 70vh;
+    visibility: hidden;
+    margin-top: 5vh;
+}
+#mensaje-out{
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid var(--verde);
+    border-radius: 3vw;
+    box-shadow: 0px 0px 10px;
+    color: var(--verde);
+    font-size: 2em;
+    resize: none;
+    height: 70vh;
+    text-align: center;
+    width:  100%;
+    padding: 2em;
+    
+}
+
+.tapa{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    align-items: center;
+    position: absolute; 
+    background-color: rgba(20, 21, 24, 0.9);
+    border: 2px solid var(--verde);
+    border-radius: 3vw;
+    box-shadow: 0px 0px 10px;
+    color: var(--verde);
+    resize: none;
+    width: 90%;
+    height:  70vh;
+    padding: 2em;
+    margin-top: 5vh;
+    
+}
+
+#imagen{
+    width: 50%;
+    margin: 2em;
+    opacity: 0.8;
+}
+
+.párrafoSalida{
+
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 1em;
+
+}
+
+.párrafoSalida2{
+    font-size: 1em;
+    margin: 1em;
+    
+}
+
+.botones{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    
+
+}
+
+.boton{
+    
+    background-color: var(--fondo);
+    color: var(--morado);
+    font-size: 1em;
+    font-weight: bold;
+    height:3em;
+    margin: 1em;
+    display:inline;
+    text-align: center;
+    width: 40%;
+    border-radius: 24px;
+    border:3px solid var(--morado);
+    cursor: pointer;
+}
+
+#btnEncriptar{
+    color: var(--fondo);
+    background:var(--morado);
+}
+
+#btnDesencriptar{
+    color:var(--morado);
+    background-color: var(--fondo);
+    
+}
+
+#btnCopiar{
+    margin-top: -5em;
+    color:var(--verde);
+    border:3px solid var(--verde);
+}
+
+#btnBorrar{
+    margin-top: -5em;
+    color:var(--verde);
+    border:3px solid var(--verde);
+}
+
+
+
+footer{
+    background-color: var(--fondo);
+    height: 10vh;
+    display: flex;
+    color: var(--verde);
+    font-weight: bold;
+    align-items: center;
+}
+
+
+footer p{
+    font-size:1.5em;
+    text-align: center;
+    margin:auto;
+}
+
+.logosRedes{
+    height: 5vh;
+    margin: auto 2em;
+    
+}
+
