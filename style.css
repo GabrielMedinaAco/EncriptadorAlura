@@ -7,7 +7,7 @@
 }
 
 :root {
-    --fondo: #262335;
+    --fondo: #141516;
     --morado:#9346DE;
     --verde: #00ADB9
 }
@@ -26,6 +26,13 @@
 
 
 body{
+
+    background-image: url(fondo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
     font-family: 'Press Start 2P', cursive;
     color: var(--morado);
     height: 100vh;
@@ -63,7 +70,7 @@ header p{
 }
 
 .container-main{
-    background-color:var(--fondo); 
+
     position: relative;
     display: flex;
     flex-direction: row;
@@ -87,7 +94,7 @@ header p{
 }
 
 .ingreseTexto{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     border: 2px solid var(--morado);
     border-radius: 20px;
     box-shadow: 0px 0px 10px;
@@ -119,7 +126,7 @@ header p{
 
 .container-exterior p label{
     font-size: 1em;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 5px;
     margin-top: 1em;
 }
@@ -144,7 +151,7 @@ header p{
 }
 #mensaje-out{
     
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     border: 3px solid var(--verde);
     border-radius: 20px;
     box-shadow: 0px 0px 10px;
@@ -167,7 +174,7 @@ header p{
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(20, 21, 24, 0.9);
+    background-color: var(--fondo);
     border: 2px solid var(--verde);
     border-radius: 20px;
     box-shadow: 0px 0px 10px;
@@ -182,7 +189,7 @@ header p{
 #imagen{
     height: 30%;
     width: 30%;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .párrafoSalida{
@@ -211,7 +218,7 @@ header p{
 
 .boton{
     
-    background-color: var(--fondo);
+    background-color: black;
     color: var(--morado);
     font-size: 1em;
     font-weight: bold;
