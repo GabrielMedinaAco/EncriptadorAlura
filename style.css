@@ -24,7 +24,6 @@
     border: 2px solid var(--morado);
 }
 
-
 body{
 
     background-image: url(fondo.png);
@@ -36,7 +35,6 @@ body{
     font-family: 'Press Start 2P', cursive;
     color: var(--morado);
     height: 100vh;
-    
 }
 
 .container{
