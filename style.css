@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive;
-    
 }
 
 :root {
@@ -25,38 +24,27 @@
     border: 2px solid var(--morado);
 }
 
+
 body{
     font-family: 'Press Start 2P', cursive;
-    box-sizing: border-box;
     color: var(--morado);
-    line-height: normal;
-    position: relative;
-    min-height: 100vh;
-    width: 100vw;
-}
-
-.container{
-    background:none;
-    position: absolute;
+    height: 100vh;
     
 }
 
-<!--Fondo Matrix-->
-#canvasMatrix{
-    background-color:var(--fondo);
-    position: absolute;
-    width: 100vw;
-    min-height: 100vh;
+.container{
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
 }
 
 header{
-    background-color: var(--fondo);
+    background-color: var(--verde);
     height: 10vh;
     display: flex;
     color: var(--morado);
     font-weight: bold;
     align-items: center;
-    align-content: center;
 }
 
 header p{
@@ -69,49 +57,48 @@ header p{
     color: var(--morado);
     font-size:3em;
     margin-left: 2em;
+    margin-right: 2em;
     text-decoration: none;
     text-shadow: 2px 1px 3px #B93AFF;
-
 }
 
 .container-main{
-   
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap:0;
-    width: 100vw;
+    background-color:var(--fondo); 
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     height: 80vh; 
-    align-content: center;
+    justify-content: space-around;
     align-items: center;
-          
 }
 
 
 .entrada{
    
-   border-radius: 20px;
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: space-between;
    text-align: left;
-   height: 80vh;
+   height: 80%;
+   width: 50%;
        
 }
 
 .ingreseTexto{
     background-color: rgba(0, 0, 0, 0.8);
     border: 2px solid var(--morado);
-    border-radius: 3vw;
+    border-radius: 20px;
     box-shadow: 0px 0px 10px;
     color: var(--morado);
     resize: none;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: justify;
     text-transform: lowercase;
-    width: 80%;
     padding: 2em;
-    height: 50vh;
-    margin-top: 5vh;
+    width: 100%;
+    height: 60%;
         
 }
 
@@ -124,10 +111,9 @@ header p{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 25vh;
     justify-content: space-around;
-    width: 80%;
     align-content: center;
+    width: 100%;
 }
 
 
@@ -139,31 +125,33 @@ header p{
 }
 
 .mensaje{
+    width: 30%;
+    height: 80%;
     position: relative;
-    height: 80vh;
 }
     
 .mensajeSalida{
+    position:absolute;
+    left: 0px;
+    top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    position: absolute;
-    width: 90%;
-    height: 70vh;
+    width: 100%;
+    height: 100%;
     visibility: hidden;
-    margin-top: 5vh;
 }
 #mensaje-out{
     
     background-color: rgba(0, 0, 0, 0.8);
     border: 3px solid var(--verde);
-    border-radius: 3vw;
+    border-radius: 20px;
     box-shadow: 0px 0px 10px;
     color: var(--verde);
-    font-size: 2em;
+    font-size: 1.5em;
     resize: none;
-    height: 70vh;
+    height: 100%;
     text-align: center;
     width:  100%;
     padding: 2em;
@@ -171,49 +159,51 @@ header p{
 }
 
 .tapa{
-    
+    position:absolute;
+    left: 0px;
+    top: 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
     align-items: center;
-    position: absolute; 
+    justify-content: space-around;
     background-color: rgba(20, 21, 24, 0.9);
     border: 2px solid var(--verde);
-    border-radius: 3vw;
+    border-radius: 20px;
     box-shadow: 0px 0px 10px;
     color: var(--verde);
     resize: none;
-    width: 90%;
-    height:  70vh;
+    height:  100%;
     padding: 2em;
-    margin-top: 5vh;
+    
     
 }
 
 #imagen{
-    width: 50%;
-    margin: 2em;
+    height: 30%;
+    width: 30%;
     opacity: 0.8;
 }
 
 .párrafoSalida{
 
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    line-height: 1.2em;
     margin: 1em;
 
 }
 
 .párrafoSalida2{
     font-size: 1em;
+    line-height: 1.2em;
     margin: 1em;
     
 }
 
 .botones{
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-around;
     
 
@@ -229,10 +219,11 @@ header p{
     margin: 1em;
     display:inline;
     text-align: center;
-    width: 40%;
+    width: 50%;
     border-radius: 24px;
     border:3px solid var(--morado);
     cursor: pointer;
+    padding: 0.5em;
 }
 
 #btnEncriptar{
@@ -243,7 +234,6 @@ header p{
 #btnDesencriptar{
     color:var(--morado);
     background-color: var(--fondo);
-    
 }
 
 #btnCopiar{
@@ -261,11 +251,11 @@ header p{
 
 
 footer{
-    background-color: var(--fondo);
+    background-color: var(--morado);
     height: 10vh;
-    display: flex;
-    color: var(--verde);
-    font-weight: bold;
+    width: 100% ;
+    display: flex; 
+    flex-direction: row;
     align-items: center;
 }
 
@@ -274,11 +264,168 @@ footer p{
     font-size:1.5em;
     text-align: center;
     margin:auto;
+    font-weight: bold;
+    color: var(--verde);
 }
 
 .logosRedes{
     height: 5vh;
     margin: auto 2em;
+}
+
+/*VIEWPORTDE TABLET*/
+@media screen and (max-width: 1023px) and (min-height: 600px){
     
+    .container{
+        width: 100vw;
+    }
+
+    .logo{
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size:6vw;
+    }
+
+    header p{
+        line-height: 130%;
+        margin-left: 0em;
+        font-size: 3.5vw;
+    }
+    
+    .container-main{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .entrada{
+        height: 60%;
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .ingreseTexto{
+        height: 70%;
+        font-size: 3vw;
+    }
+
+    .container-exterior{
+        align-items: center;
+        font-size: 2.5vw;
+    }
+
+    .botones{
+        width: 100%;
+    }
+
+    .boton{
+        font-size: 2.5vw;
+    }
+
+    .mensaje{
+        height:30% ;
+        width: 80%;
+    }
+    .párrafoSalida{
+        font-size: 3vw;
+    }
+    
+    .párrafoSalida2{
+        font-size: 2.5vw;
+        
+    }
+
+    #mensaje-out{
+        font-size: 3vw;
+    }
+
+    #imagen{
+        display: none;
+    }
+    
+}
+   
+
+/*VIEWPORTDE CELULAR*/
+@media screen and (max-width: 480px){
+ 
+    .container{
+        width: 100vw;
+        height: 140vh;     
+    }
+
+    
+
+    .logo{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    header p{
+        line-height: 130%;
+        margin-left: 0em;
+        font-size: 4vw;
+    }
+    
+    .container-main{
+        height:120vh ;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .entrada{
+        height: 50%;
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .ingreseTexto{
+        height: 70%;
+        font-size: 3.5vw;
+    }
+
+    .container-exterior{
+        align-items: center;
+        font-size: 3vw;
+    }
+
+    .botones{
+        flex-direction: column;
+        align-items: center;
+    }
+    .boton{
+        width: 80%;
+        font-size: 3vw;
+        margin: 0.5em;
+    }
+
+    .mensaje{
+        height:40% ;
+        width: 80%;
+    }
+
+    .párrafoSalida{
+        font-size: 3.5vw;
+    }
+    
+    .párrafoSalida2{
+        font-size: 3vw;
+        
+    }
+
+    #mensaje-out{
+        font-size: 3.5vw;
+    }
+
+
+    #imagen{
+        display: none;
+    }
+    
+    footer p{
+        font-size:4vw;
+        line-height: 150%;
+    }
 }
 
