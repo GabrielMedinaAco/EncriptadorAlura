@@ -28,7 +28,6 @@ Nota: Funciona solo letras minúsculas sin acentos, sin números y sin caractere
 
 
 ##:eyes:[Dale un vistazo](https://gabrielmedinaaco.github.io/EncriptadorAlura/)
-https://gabrielmedinaaco.github.io/EncriptadorAlura/
 
 ## Autor
 **Gabriel Medina Aco**
